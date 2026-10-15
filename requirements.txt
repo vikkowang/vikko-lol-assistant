@@ -1,0 +1,6 @@
+sherpa-onnx
+sounddevice
+numpy
+pynput
+openai
+PySide6
