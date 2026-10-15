@@ -1,6 +1,0 @@
-{
-  "api_key": "sk-在这里填你的DeepSeek密钥",
-  "base_url": "https://api.deepseek.com",
-  "model": "deepseek-chat",
-  "prompt": "你是英雄联盟（LOL）游戏助手，用简洁、直接的中文回答玩家的问题。"
-}

@@ -1,11 +1,18 @@
 """本地语音识别：SenseVoice-small（sherpa-onnx，CPU）。"""
 
+import sys
 import threading
 from pathlib import Path
 
 import sherpa_onnx
 
-MODEL_DIR = Path(__file__).parent / "models" / "sensevoice"
+# 打包成 exe 后模型放在 exe 同目录；开发时放在脚本同目录
+if getattr(sys, "frozen", False):
+    _BASE_DIR = Path(sys.executable).parent
+else:
+    _BASE_DIR = Path(__file__).parent
+
+MODEL_DIR = _BASE_DIR / "models" / "sensevoice"
 SAMPLE_RATE = 16000
 
 _recognizer = None

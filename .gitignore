@@ -4,5 +4,11 @@ __pycache__/
 .venv/
 models/
 
+# 打包产物
+build/
+dist/
+*.spec
+installer/*.exe
+
 .idea/
 .DS_Store
